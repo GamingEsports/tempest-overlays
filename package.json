@@ -1,0 +1,43 @@
+{
+  "name": "tempest-overlay",
+  "version": "0.0.0",
+  "description": "Broadcast overlays for the Ames Smash weekly named Tempest",
+  "homepage": "",
+  "author": {
+    "name": ".jpg",
+    "email": "derek.bond24@gmail.com",
+    "url": "jpg.contact"
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^2.1.0",
+    "dashboardPanels": [
+      {
+        "name": "break",
+        "title": "Break",
+        "width": 3,
+        "file": "break.html",
+        "workspace": "Tempest",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "index.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "repository": "https://github.com/nodecg/nodecg.git",
+  "license": "GPL-3.0"
+}

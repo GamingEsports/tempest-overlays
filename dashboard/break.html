@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="src/break.js" defer></script>
+</head>
+
+<body>
+    <div class="section">
+        <label for="info-text">Info text</label>
+        <input type="text" id="info-text" autocomplete="off" onchange="infoTextChanged()">
+        <label for="edition">Tempest Edition (0 for blank)</label>
+        <input type="number" id="edition" autocomplete="off" onchange="editionChanged()">
+        <label for="location-text">Location</label>
+        <input type="text" id="location-text" autocomplete="off" onchange="locationTextChanged()">
+    </div>
+    <button class="green" onclick="updateButtonClicked()">Update</button>
+    <button class="red" onclick="revertButtonClicked()">Revert</button>
+    <div id="notsaved" class="alert">⚠ Changes are not live</div>
+</body>
+
+</html>
