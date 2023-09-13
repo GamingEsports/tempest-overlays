@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="src/next-match.js" defer></script>
+</head>
+
+<body>
+    <div class="section">
+        <label for="player-a-name">Player A Name/Team</label>
+        <input type="text" id="player-a-name" autocomplete="off" onchange="playerANameChanged()">
+        <label for="player-b-name">Player B Name/Team</label>
+        <input type="text" id="player-b-name" autocomplete="off" onchange="playerBNameChanged()">
+    </div>
+
+    <div class="section">
+        <label for="match-style">Match Style (Best of 3 / Best of 5)</label>
+        <input type="text" id="match-style" autocomplete="off" onchange="matchStyleChanged()">
+        <label for="match-name">Match Name</label>
+        <input type="text" id="match-name" autocomplete="off" onchange="matchNameChanged()">
+    </div>
+    
+    <button class="green" onclick="updateButtonClicked()">Update</button>
+    <button class="red" onclick="revertButtonClicked()">Revert</button>
+    <div id="notsaved" class="alert">⚠ Changes are not live</div>
+</body>
+
+</html>

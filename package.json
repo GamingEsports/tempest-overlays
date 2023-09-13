@@ -1,5 +1,5 @@
 {
-  "name": "tempest-overlay",
+  "name": "tempest-overlays",
   "version": "0.0.0",
   "description": "Broadcast overlays for the Ames Smash weekly named Tempest",
   "homepage": "",
@@ -26,6 +26,30 @@
         "title": "Break",
         "width": 3,
         "file": "break.html",
+        "workspace": "Tempest",
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "current-match",
+        "title": "Current Match",
+        "width": 3,
+        "file": "current-match.html",
+        "workspace": "Tempest",
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "next-match",
+        "title": "Next Match",
+        "width": 3,
+        "file": "next-match.html",
+        "workspace": "Tempest",
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "casters",
+        "title": "Casters",
+        "width": 3,
+        "file": "casters.html",
         "workspace": "Tempest",
         "headerColor": "#525F78"
       }

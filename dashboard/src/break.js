@@ -54,6 +54,5 @@ function revertButtonClicked() {
 }
 
 function replicantsEqual(a, b){
-    console.log("replicantsEqual", a, b, JSON.stringify(a) === JSON.stringify(b));
     return JSON.stringify(a) === JSON.stringify(b);
 }
