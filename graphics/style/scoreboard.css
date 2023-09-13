@@ -1,0 +1,86 @@
+body {
+    width: 1920px;
+    height: 1080px;
+    margin: 0;
+    padding: 0;
+    outline: 2px solid black;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+    color: #F3F6F4;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 1920px;
+    position: absolute;
+    top: 20px;
+}
+
+.logo {
+    width: 242px;
+    filter: drop-shadow(0px 0px 20px #2C3D31) drop-shadow(0px 0px 40px #2C3D3140);
+    margin: 0 45px;
+    transform: translateY(-35px);
+}
+
+.score-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.score-wrapper > .score-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    border: 4px solid #B9CEB8;
+    background: linear-gradient(270deg, #2C3D31 0%, #34493B 100%);
+    box-shadow: 0px 0px 23px 0px rgba(44, 61, 49, 0.25);
+    overflow: hidden;
+    font-family: "Russo One", sans-serif;
+}
+
+.score-wrapper > .score-card > .score{
+    background: linear-gradient(180deg, #B9CEB8 -75.6%, #F3F6F4 163.1%);
+    color: #2C3D31;
+    font-size: 58px;
+    padding: 2px 0;
+    padding-top: 5px;
+    line-height: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+}
+
+.score-wrapper > .score-card > .name{
+    font-size: 42px;
+    margin: 0 20px;
+    white-space: nowrap;
+    transform-origin: center left;
+}
+
+.score-wrapper.right {
+    align-items: flex-end;
+}
+
+.score-wrapper.right > .score-card {
+    flex-direction: row-reverse;
+}
+
+.score-wrapper.right > .score-card > .name{
+    text-align: right;
+    transform-origin: center right;
+}
+
+.detail-text {
+    padding: 2px 8px;
+    background: rgba(44, 61, 49, 0.70);
+    border-radius: 5px;
+    font-size: 22px;
+    margin-top: 8px;
+    text-align: center;
+}
+

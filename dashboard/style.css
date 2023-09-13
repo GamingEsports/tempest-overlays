@@ -100,6 +100,10 @@ button.green {
     background: #43A047;
 }
 
+button.selected {
+    background: linear-gradient(30deg, #43A047 -400%, #FFFFFF40 100%);
+}
+
 button:hover, button.red:hover, button.green:hover{
     background: white;
     color: black;
@@ -133,6 +137,10 @@ input[type="text"]{
 input[type="text"]:focus, input[type="number"]:focus{
     background: white;
     color: black;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
 }
 
 input[type="checkbox"]{

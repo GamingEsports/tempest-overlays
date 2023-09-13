@@ -52,11 +52,29 @@
         "file": "casters.html",
         "workspace": "Tempest",
         "headerColor": "#525F78"
+      },
+      {
+        "name": "bottom-bar",
+        "title": "Bottom Bar",
+        "width": 3,
+        "file": "bottom-bar.html",
+        "workspace": "Tempest",
+        "headerColor": "#525F78"
       }
     ],
     "graphics": [
       {
         "file": "break.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "scoreboard.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "bottom-bar.html",
         "width": 1920,
         "height": 1080
       }

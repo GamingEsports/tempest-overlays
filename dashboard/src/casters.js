@@ -37,8 +37,10 @@ NodeCG.waitForReplicants(castersRep, unsavedCastersRep, showCastersRep).then(() 
     showCastersRep.on('change', (newVal) => {
         if (newVal) {
             showCasters.innerHTML = 'Show casters: ON<br><i style="font-size: .8em; font-weight: 400;">Updates instantly</i>'
+            showCasters.classList.add("selected");
         } else {
             showCasters.innerHTML = 'Show casters: OFF<br><i style="font-size: .8em; font-weight: 400;">Updates instantly</i>'
+            showCasters.classList.remove("selected");
         }
     });
 });
@@ -62,7 +64,7 @@ function revertButtonClicked() {
 }
 
 function showCastersClicked() {
-    showCastersRep.value = !showCastersRep.value;
+    showCastersRep.value = !showCastersRep.value;git 
 }
 
 function replicantsEqual(a, b){
