@@ -60,8 +60,8 @@ function changeScore(element, num, upwards){
     const DISTANCE = 50;
     tl.fromTo(element, {y: 0}, {y : upwards ? DISTANCE : -DISTANCE, duration: 0.5, ease: "power2.in", onComplete: function() {
         element.innerText = num;
+        tl.fromTo(element, {y : upwards ? -DISTANCE : DISTANCE}, {y : 0, duration: 0.5, ease: "power2.out"});
     }})
-    .fromTo(element, {y : upwards ? -DISTANCE : DISTANCE}, {y : 0, duration: 0.5, ease: "power2.out"});
 }
 
 function changePlayerName(element, name){

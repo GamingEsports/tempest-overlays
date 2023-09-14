@@ -76,7 +76,7 @@ NodeCG.waitForReplicants(bottomBarRep, currentMatchRep, nextMatchRep).then(() =>
             return;
         }
         if (newVal.playerAName !== oldVal.playerAName || newVal.playerBName !== oldVal.playerBName) {
-            changeText(e.nextMatch, text);
+            changeText(e.nextMatch, html);
         }
     });
 });
