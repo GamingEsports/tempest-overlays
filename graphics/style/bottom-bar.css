@@ -38,7 +38,8 @@ body {
 }
 
 .bar-mode-wrapper {
-    display: flex;
+    display: none;
+    justify-content: center;
     align-items: center;
     width: 100%;
 }
@@ -69,6 +70,8 @@ body {
     height: 100%;
     font-family: "Russo One", sans-serif;
     font-size: 56px;
+    white-space: nowrap;
+    margin-right: auto;
 }
 
 .time-wrapper {
@@ -89,4 +92,9 @@ body {
     font-size: 56px;
     line-height: .9em;
     font-family: "Russo One", sans-serif;
+}
+
+.score {
+    color: #B9CEB8;
+    margin: 0 .7em;
 }
