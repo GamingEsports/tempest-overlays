@@ -18,14 +18,18 @@ NodeCG.waitForReplicants(breakRep).then(() => {
     breakRep.on('change', (newVal, oldVal) => {
         if (oldVal === undefined) {
             changeText(e.breakText, newVal.infoText);
-            changeText(e.detailsText, `#${newVal.edition} - ${getDate()} - ${newVal.locationText}`);
+            const edition = newVal.edition == 0 ? "" : `#${newVal.edition} - `;
+            const location = newVal.locationText == "" ? "" : ` - ${newVal.locationText} `;
+            changeText(e.detailsText, `${edition}${getDate()}${location}`);
             return;
         }
         if (newVal.infoText !== oldVal.infoText) {
             changeText(e.breakText, newVal.infoText);
         }
         if (newVal.edition !== oldVal.edition || newVal.locationText !== oldVal.locationText) {
-            changeText(e.detailsText, `#${newVal.edition} - ${getDate()} - ${newVal.locationText}`);
+            const edition = newVal.edition == 0 ? "" : `#${newVal.edition} - `;
+            const location = newVal.locationText == "" ? "" : ` - ${newVal.locationText} `;
+            changeText(e.detailsText, `${edition}${getDate()}${location}`);
         }
     });
 });

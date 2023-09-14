@@ -21,7 +21,7 @@ body {
 
 .logo {
     height: 162px;
-    filter: drop-shadow(0px 0px 25px #2C3D31) drop-shadow(0px 0px 50px #2C3D3140);
+    filter: drop-shadow(0px 0px 7px #2C3D31) drop-shadow(0px 0px 14px #2C3D31) drop-shadow(0px 0px 21px #2C3D31);
     margin-right: 45px;
     transform: translateY(-7px);
 }

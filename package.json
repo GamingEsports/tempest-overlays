@@ -77,6 +77,21 @@
         "file": "bottom-bar.html",
         "width": 1920,
         "height": 1080
+      },
+      {
+        "file": "casters.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "webcam-frame-game.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "player-cam-webcam-frame.html",
+        "width": 1920,
+        "height": 1080
       }
     ]
   },
